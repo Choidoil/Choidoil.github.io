@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.vision.dessert.model.dessertDao">
+<!-- public int isExist(Integer key) throws SQLException;//★ -->
+<select id="isExist" parameterType="int">
+	SELECT * FROM dessert WHERE NO=#{param1}
+</select>
+
+<!-- public int insert(dessert vo) throws SQLException;//★ -->
+<insert id="insert" parameterType="org.vision.dessert.model.dessert">
+	INSERT INTO dessert (NO,NAME,CATEGORY,PRICE,USEPEOPLE,COMPANY,IMG,INFO) 
+	VALUES(dessert_SEQ.NEXTVAL,#{name},#{category},#{price},#{usepeople},#{company},#{img},#{info})
+</insert>
+
+<!-- public int delete(Integer key) throws SQLException;//★ -->
+
+<delete id="delete" parameterType="int">
+	DELETE FROM dessert WHERE NO = #{param1}
+</delete>
+
+<!-- public int update(Map<String,Object> map) 
+				throws SQLException;//★ -->
+<update id = "update" parameterType="java.util.Map">
+	UPDATE dessert SET 
+	NAME= #{name},CATEGORY= #{category}, 
+	PRICE = #{price}, USEPEOPLE= #{usepeople},
+	COMPANY = #{company}, IMG = #{img},
+	INFO = #{info}
+	WEHRE NO = #{no}
+</update>
+
+<!-- public List<dessert> queryForList() throws SQLException;//★ -->
+<select id="selectAll" resultType="org.vision.dessert.model.dessert">
+	SELECT * FROM dessert
+</select>
+
+<select id = "listByCategory" resultType="org.vision.dessert.model.dessert">
+	SELECT * FROM dessert
+	WHERE CATEGORY = #{param1}
+</select>
+
+
+
+<!-- public List<dessert> queryForList(Integer key) throws SQLException;
+		// key에 해당하는 하나의 자료를 vo로 리턴  -->
+		
+<select id="selectKey" parameterType="int" 
+	resultType="org.vision.dessert.model.dessert">
+	SELECT * FROM dessert
+	WHERE NO = #{param1}
+</select>
+
+<!-- // key에 해당하는 하나의 자료를 vo로 리턴 
+		public dessert selectVO(Integer key) throws SQLException;//★ -->
+<select id="selectVO" parameterType="int" 
+	resultType="org.vision.dessert.model.dessert">
+	SELECT * FROM dessert
+	WHERE NO = #{param1}
+</select>
+
+<!-- // 현재 자료수 파악 
+		public int getAllCount() throws SQLException;//★ -->
+<select id="getAllCount" resultType="int">
+	SELECT COUNT(*) FROM dessert
+</select>
+<!-- 
+// 시리얼번호 자동증가 값중 현재 기록된 최대값을 알아내기 
+		public int getMaxNo()  throws SQLException;//★
+ -->
+<select id="getMaxNo" resultType="int">
+	SELECT MAX(NO) FROM dessert
+</select>
+
+<!-- public int getCurrval() throws SQLException; -->
+<select id="getCurrval" resultType="int">
+	SELECT RENTCAR_SEQ.CURRVAL FROM DUAL
+</select>
+
+<!-- // 로그인판단
+		public int login(Map<String,String> map) throws SQLException; -->
+
+<select id="login" parameterType="java.util.Map" resultType="int">
+	select count(*) from dessert_MEMBER 
+	WHERE ID= #{id} AND PASS=#{pass}
+</select>
+
+
+</mapper>

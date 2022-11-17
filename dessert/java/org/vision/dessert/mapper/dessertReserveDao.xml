@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.vision.dessert.model.dessertReserveDao">
+
+<!-- public int insert(RentReserve vo) throws SQLException; -->
+<insert id="insert" parameterType="org.vision.dessert.model.dessertReserve">
+	insert into dessert_RESERVE 
+	(REGNO,NO,MEMID,NAME,CATEGORY,PRICE,INFO)
+	values(
+	RENT_RESERVE_SEQ.NEXTVAL,#{no},#{memid},#{name},#{category},#{price},
+	#{info}
+	) 
+</insert>
+
+<!-- public int getCurrval() throws SQLException ; -->
+<!-- SELECT RENT_RESERVE_SEQ.CURRVAL FROM DUAL  -->	
+<select id="getCurrval" resultType="int">
+	select max(REGNO) FROM dessert_RESERVE
+</select>
+
+<select id="selectAll" resultType="org.vision.dessert.model.dessertReserve">
+	select * from dessert_RESERVE 
+	order by REGNO asc
+</select>
+
+<!-- public List<RentReserve> queryForList(String memid) throws SQLException; -->
+<select id="queryForList" resultType="org.vision.dessert.model.dessertReserve">
+	select * from dessert_RESERVE 
+	where MEMID=#{param1}
+</select>
+
+<!-- public List<ReserveView> getReserveViewData(String memid) throws SQLException;
+ -->
+<select id="getReserveViewData" resultType="org.vision.dessert.model.R_VIEW">
+	select * from dessert_RESERVE
+	where MEMID = #{param1}
+</select>
+
+<select id="getAllReserveViewData" resultType="org.vision.dessert.model.R_VIEW">
+	select * from dessert_RESERVE
+</select>
+
+
+
+<!-- public int reserveCancel(int regno) throws SQLException; -->
+<delete id="reserveCancel">
+	delete dessert_RESERVE 
+	where REGNO = #{param1}
+</delete> 
+
+<!-- public RentReserve queryForObject(int regno) throws SQLException; -->	
+<select id="queryForObject" resultType="org.vision.dessert.model.dessertReserve">
+	select * from dessert_RESERVE
+	where REGNO = #{param1}
+</select>
+<!-- public int update(RentReserve bean) throws SQLException; -->
+<update id="update" parameterType="org.vision.dessert.model.dessertReserve">
+	update dessert_RESERVE set
+	NO=#{no},MEMID=#{memid},NAME=#{name},CATEGORY=#{category},PRICE=#{price},
+	INFO=#{info}
+	where REGNO=#{regno}
+</update>
+
+</mapper>
