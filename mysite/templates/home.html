@@ -1,0 +1,71 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}home.html{% endblock %} 
+{% block extra-style %}
+<style type="text/css">
+.home-image {
+	background-image: url("{% static 'img/lion.jpg' %}");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	height: 500px;
+	border-top: 10px solid #ccc;
+	border-bottom: 10px solid #ccc;
+	padding: 20px 0 0 20px;
+}
+
+.title {
+	color: #c80;
+	font-weight: bold;
+}
+
+.powered {
+	position: relative;
+	top: 77%;
+	color: #cc0;
+	font-style: italic;
+}
+</style>
+{% endblock %} 
+
+
+{% block content %}
+<div class="home-image">
+	<h2 class="title"></h2>
+	<h4 class="powered">
+		<i class="fas fa-arrow-circle-right"></i> Django/장고 웹페이지
+	</h4>
+</div>
+
+<hr style="margin: 10px 0;">
+
+<div class="row text-center">
+	<div class="col-sm-3">
+		<h3>Bookmark App</h3>
+		<p>즐겨찾는 사이트가 있다면 북마크를 만들어 이를 공유할 수 있습니다. </p>
+	</div>
+	<div class="col-sm-3">
+		<h3>Blog App</h3>
+		<p>일상의 이벤트 혹은 관심이 있는 분야에 대한 글을 올릴 수 있고, 이를 사이트 접속자들과 공유할 수 있습니다.</p>
+	</div>
+	<div class="col-sm-3">
+		<h3>Polls App</h3>
+		<p>설문조사를 할 수 있는 앱입니다. 현재 이슈가 되는 여론 등을 조사할 수 있습니다. 
+			 그리고 그 투표 결과를 바로 확인할 수 있습니다.</p>
+	</div>
+	<div class="col-sm-3">
+		<h3>Album App</h3>
+		<p>다양한 앨범을 만들어 거기에 사진을 넣을 수 있습니다. 사진에 대한 상황이나 설명이 필요한 경우 상세하게 등재 할 수
+			있습니다.</p>
+	</div>
+	
+</div>
+{% endblock content %} 
+
+{% block footer %}
+<footer class="fixed-bottom bg-info">
+	<div class="text-white font-italic text-right mr-5">Copyright
+		&copy; 2022 비젼직업전문학교-최도일 </div>
+</footer>
+{% endblock %}
+

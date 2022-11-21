@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}크롤링이슈{% endblock %} 
+
+
+{% block content %}
+	<h1>크롤링 작업</h1>
+	<hr>
+	<form action="/dispCrawling/" method="post" >{% csrf_token %}
+    	<label for="issue_name">크롤링 이슈: </label>
+    	<input id="issue_name" type="text" name="word" value="인공지능" >
+    	<input type="submit" value="OK">
+	</form>
+{% endblock content %} 
+
+{% block footer %}
+<footer class="fixed-bottom bg-info">
+	<div class="text-white font-italic text-right mr-5">Copyright
+		&copy; 2022 비젼직업전문학교-최도일 </div>
+</footer>
+{% endblock %}

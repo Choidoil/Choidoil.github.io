@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}crawling data display{% endblock %}
+{% block content %}
+    <h1>Crawling List</h1>
+    <br>
+    {% for d in data %}
+       	<h3><a href='{{ d.1 }}'>{{ d.0 }}</a></h3>
+    {% endfor %}
+    <br>
+    <div>
+        <span>
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">PreviousPage</a>
+            {% endif %}
+
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">NextPage</a>
+            {% endif %}
+        </span>
+
+    </div>
+
+{% endblock %}
