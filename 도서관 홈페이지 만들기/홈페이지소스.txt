@@ -1,0 +1,977 @@
+==============================================================메인화면========================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서관</title>
+        <!--- CSS 적용 --->
+        <link rel="stylesheet" href="homepage.css">      
+</head>
+<!-- 바디부분 -->
+<body>
+     <div id="page">
+     <!-- 헤더부분 -->
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                        
+                    </ul>
+               </nav>
+                        
+          </header>
+           <!-- 메인이미지 부분 -->
+          <article id="content">
+                <section id="main">
+                     <img src="pic5.png" alt="main img">
+                </section>
+          </article>
+          
+           <!-- footer 부분 -->
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 관리자 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+     </div>
+</body>
+</html>
+==============================================================도서관소개========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서관소개</title>
+        <!--- CSS 적용 --->
+        <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+<div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                     
+                    </ul>
+               </nav>                     
+          </header>
+          
+        <aside id="left" >
+            <ul>
+            <li><a href="pic7.PNG" target="iframe">인사말</a></li>
+            <li><a href="pic8.PNG" target="iframe">도서관역사</a></li>
+            </ul>
+        </aside>
+        
+          <div id="wrapper">
+      <section id="main">
+        <article>
+            <iframe name="iframe"  width="1500" height="600"></iframe>         
+        </article>
+      </section>
+              </div>
+              
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+     </div>
+   
+</body>
+</html>
+==============================================================이용안내========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이용안내</title>
+        <!--- CSS 적용 --->
+        <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+<div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                      
+                    </ul>
+               </nav>                     
+          </header>
+          
+          <aside id="left">        
+            <ul>
+            <li><a href="pic9.PNG" target="iframe">이용시간</a></li>
+            <li><a href="pic10.PNG" target="iframe">도서대출안내</a></li>
+            </ul>
+        </aside>
+          <div id="wrapper">
+      <section id="main">
+        <article>
+            <iframe name="iframe"  width="1500" height="600"></iframe>
+           
+        </article>
+      </section>
+                  </div>
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+     </div>
+</body>
+</html>
+==============================================================자료찾기========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자료찾기</title>
+
+<style>
+        #container {width: 960px; margin: 0 auto;}
+        #container #input-form {text-align: center;}
+        #user-table {margin: 0 auto; text-align: center;}
+        #input-form {margin-top: 10px; margin-bottom: 10px;}
+
+
+        #user-table {border-collapse: collapse;}
+        #user-table > thead > tr { background-color: #333; color:#fff; }
+        #user-table > thead > tr > th { padding: 8px; width: 150px; }
+        #user-table > tbody > tr > td { border-bottom: 1px solid gray; padding:8px; }
+</style>
+
+        <!-- 외부 스타일시트 적용 -->
+        <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+<div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                       
+                    </ul>
+               </nav>                     
+          </header>
+          
+          <aside id="left">        
+            <ul>
+            <li><a>자료찾기</a></li>
+            </ul>
+        </aside>
+          
+         <div id="login_wrapper">    
+         <div id="container">
+         <div id="input-form">
+            자료검색 : <input type="text" id="keyword" />
+         </div>
+
+        <table id="user-table">
+            <thead>
+                <tr>
+
+                    <th>도서명</th>
+                    <th>저자</th>
+                    <th>청구기호</th>
+                    <th>발행처</th>
+                    <th>발행년도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22485918">역행자</a></td>
+                    <td>자청</td>
+                    <td>아 691-18-2</td>
+                    <td>웅진지식하우스</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/publisher_review.naver?bid=22317823">기분을 관리하면 인생이 관리된다</a></td>
+                    <td>김다슬</td>
+                    <td>아 372-18-1</td>
+                    <td>클라우디아</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22353804">작별인사(김영하 장편소설)</a></td>
+                    <td>김영하</td>
+                    <td>아 400-18-10</td>
+                    <td>복복서가</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22458391">인플레이션에서 살아남기</a></td>
+                    <td>오건영</td>
+                    <td>아 005.1-18-7</td>
+                    <td>페이지2북스</td>
+                    <td>2022</td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=18926010">불편한 편의점</a></td>
+                    <td>김소연</td>
+                    <td>아 005.1-18-8</td>
+                    <td>나무옆의자</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22452419">나로서 충분히 괜찮은 사람</a></td>
+                    <td>김재식</td>
+                    <td>아 005.1-18-9</td>
+                    <td>북로망스</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22462130">변화하는 세계 질서</a></td>
+                    <td>레이 달리오</td>
+                    <td>아 005.1-18-10</td>
+                    <td>한빛비즈</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22523637">부를 재편하는 금융 대혁명</a></td>
+                    <td>마라온 라부</td>
+                    <td>아 005.1-18-10</td>
+                    <td>미디어숲</td>
+                    <td>2022</td>
+                </tr>
+                
+            </tbody>
+        </table> 
+                    
+    </div>
+    </div>      
+                      
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+     </div>
+</body>
+</html>
+==============================================================공지사항========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>공지사항</title>
+        <!--- CSS 적용 --->
+        <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+<div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                   
+                    </ul>
+               </nav>                     
+          </header>
+          
+          <aside id="left">        
+            <ul>
+            <li><a>공지사항</a></li>
+            </ul>
+        </aside>
+        
+         <div id="wrapper">
+    <section class="notice">
+    <div class="page-title">
+    <div class="container">  
+    </div>
+    </div>
+
+    <!-- board seach area -->
+    <div id="board-search">
+    <div class="container">
+    <div class="search-window">
+                <form action="">
+                    <div class="search-wrap">
+                        <label for="search" class="blind">공지사항 내용 검색</label>
+                        <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
+                        <button type="submit" class="btn btn-dark">검색</button>
+                    </div>
+                </form>
+     </div>
+     </div>
+     </div>
+   
+    <!-- board list area -->
+    <div id="board-list">
+        <div class="container">
+            <table class="board-table">
+                <thead>
+                <tr  align="center">
+                    <th scope="col" class="th-num">번호</th>
+                    <th scope="col" class="th-title">제목</th>
+                    <th scope="col" class="th-date">등록일</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr  align="center">
+                    <td>3</td>
+                    <th>
+                      <a href="#!">희망도서 동네서점 바로 대출서비스 이용안내</a>
+                      <p>테스트</p>
+                    </th>
+                    <td>2022.04.23</td>
+                </tr>
+
+                <tr  align="center">
+                    <td>2</td>
+                    <th><a href="#!">사물함 이용 재개 안내</a></th>
+                    <td>2022.01.15</td>
+                </tr>
+
+                <tr  align="center">
+                    <td>1</td>
+                    <th><a href="#!">서구 온라인 전자도서관 이용안내</a></th>
+                    <td>2021.12.23</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+    </section>
+          </div>
+          
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+     </div>
+</body>
+</html>
+==============================================================로그인========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+        <!--- CSS 적용 --->
+        <link rel="stylesheet" href="homepage.css">
+        
+</head>
+<body>
+
+          <div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                    
+                    </ul>
+               </nav>                     
+          </header>
+          </div>
+          
+       <div id="login_wrapper">   
+       <form >
+       <fieldset>
+            <legend> 로그인 </legend>
+            <label for="user_id"> 아이디 : </label>
+            <input type="text" id="user_id" name="user_id" size="10" autofocus>
+            <label for="user_pw"> 비밀번호 : </label>
+            <input type="password" id="user_pw" name="user_pw">
+        </fieldset>
+        
+        <fieldset class="sendform">
+            <button type="button" onclick="alert('로그인 되었습니다'); location.href='home.html'">login</button>
+        </fieldset>
+        </form>
+        </div>           
+          
+          
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+     
+     
+</body>
+</html>
+==============================================================회원가입========================================================
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+        <!--- CSS 적용 --->
+        <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+<div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                    
+                    </ul>
+               </nav>                     
+          </header>
+         
+        <div id="login_wrapper">
+        <form name="input1" action="join.jsp" method="post" >
+        <fieldset>
+            <legend> 회원가입 </legend>
+            <ul>              
+                <li> <label class="reg" for="new_id"> 아이디 <em> * </em> </label>
+                    <input type="text" id="new_id" name="new_id" size="20" autocomplete="on" required>
+                </li>              
+                <li> <label class="reg" for="new_pw1"> 비밀번호 <em> * </em> </label>
+                    <input type="password" id="new_pw1" name="new_pw1" size="20" required>
+                </li>
+                <li> <label class="reg" for="new_pw2"> 비밀번호 확인 <em> * </em> </label>
+                    <input type="password" id="new_pw2" name="new_pw2" size="20" required>
+                </li>
+                <li> <label class="reg" for="user_name"> 이름 <em> * </em> </label>
+                    <input type="text" id="user_name" name="user_name" size="20" required>
+                </li>
+                <li> <label class="reg" for="user_mail"> 메일주소 <em> * </em> </label>
+                    <input type="email" id="user_mail" name="user_mail" size="20" required>
+                </li>
+                <li> <label class="reg" for="user_tel"> 전화 번호 </label>
+                    <input type="tel" id="user_tel" name="user_tel" size="20">
+                </li>
+            </ul>
+        </fieldset>
+              
+        <fieldset class="sendform">
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>      
+        </form>
+        </div>
+        
+        </div>         
+              
+              
+          <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+              
+
+     
+</body>
+</html>
+==============================================================회원가입.jsp========================================================
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+<div id="page">
+          <header>
+               <div id="logo">
+                       <a href="home.html" target="_blank"><img src="pic4.png" alt="logo"></a>
+                       
+               </div>
+               
+               <div id="top_menu">
+                       <a href="login.html">로그인</a> &nbsp;&nbsp;&nbsp;
+                       <a href="join.html">회원가입</a>
+               </div>
+               
+               <nav>
+                    <ul>
+                        <li><a href="introduce.html">도서관소개</a></li>
+                        <li><a href="information.html">이용안내</a></li>
+                        <li><a href="search.html">자료찾기</a></li>
+                        <li><a href="notice.html">공지사항</a></li>                    
+                    </ul>
+               </nav>                     
+          </header>
+<%
+    request.setCharacterEncoding("UTF-8");
+    String new_id = request.getParameter("new_id");
+    String new_pw1 = request.getParameter("new_pw1");
+    String new_pw2 = request.getParameter("new_pw2");
+    String user_name = request.getParameter("user_name");
+    String user_mail = request.getParameter("user_mail");
+    String user_tel = request.getParameter("user_tel");
+%>
+
+<p> 가입이 완료되었습니다! </p>
+<p> [입력하신 내용] <br>
+    새로 가입한 아이디 : <%= new_id %> <br>
+    새로 가입한 비밀번호 : <%= new_pw1 %> <br>
+    새로 가입한 비밀번호 확인 : <%= new_pw2 %> <br>
+    새로 가입한 회원명 : <%= user_name %> <br>
+    새로 가입한 메일주소 : <%= user_mail%> <br>
+    새로 가입한 전화번호 : <%= user_tel %> <br>
+    
+     </div> 
+     
+      <footer>
+               <div>
+				<small>
+					<span> 주소 : 대전 서구 둔산동 000번길 00 </span> <span> 대표 : 최도일 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : lskk123@naver.com </span>
+				</small>
+			</div>
+          </footer>
+</body>
+</html>
+==============================================================CSS========================================================
+@charset "UTF-8";
+
+#wrapper{
+	width:200px;
+	margin:0 auto;	
+}
+
+*{margin: 0 auto; padding: 0px;}
+ul{list-style: none;} 
+a{text-decoration: none;} 
+
+
+
+header{
+	width: 1910PX; 
+	height: 95px;
+	background-color: green;
+	position: relative;
+}
+
+#logo{
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+
+#top_menu{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	color: white; 	
+}
+
+#top_menu a{color: white;}
+
+nav{
+	position: absolute;
+	bottom: 10px;
+	left: 300px;
+	font-size: 20px;
+}
+
+nav li{
+	display: inline;
+	margin-left: 180px;
+}
+
+#content #main img{
+	width: 1910PX;
+	height: 850px;
+	} 
+
+
+nav li a{color: white;}
+
+   
+       div#login_wrapper{
+          margin: 0 auto;
+          position: absolute;
+          top: 20%;
+          left: 20%;
+         
+       } 
+      
+        
+        form fieldset {
+            margin: 0 auto;
+            width:1000px;            
+        }
+        form legend {
+            font-size: 18px;
+            color: #0066ff;
+            font-weight: 600;
+            text-align: center;
+        }
+        form label.reg {
+            font-size: 14px;
+            width: 120px;
+            float: left;
+        }
+        form label em {
+            font-size: 15px;
+            color: red;
+            font-weight: 500;
+        }
+        form ul li {
+            list-style: none;
+            width: 12px;
+            
+            
+        }
+        form fieldset.sendform {
+            text-align: center;
+            
+        }
+
+
+
+
+
+/* 왼쪽 사이드 메뉴 */
+aside#left{
+    float: left;
+    width: 10em;
+    margin-right: 1em;
+}
+
+aside#left ul{ list-style: none}
+aside#left ul li{
+    background-color: #3f3f3f;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+}
+aside#left ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+aside#left ul li:hover{
+    background-color: red;
+}
+
+aside#main{
+    float: left;
+}
+
+/* 가운데 본문 영역 */
+
+section#main{
+    float: left;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+section.notice {
+  padding: 80px 0;
+}
+
+.page-title {
+  margin-bottom: 60px;
+}
+.page-title h3 {
+  font-size: 28px;
+  color: #333333;
+  font-weight: 400;
+  text-align: center;
+}
+
+#board-search .search-window {
+  padding: 15px 0;
+  background-color: #f9f7f9;
+}
+#board-search .search-window .search-wrap {
+  position: relative;
+/*   padding-right: 124px; */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 564px;
+}
+#board-search .search-window .search-wrap input {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding: 7px 14px;
+  border: 1px solid #ccc;
+}
+#board-search .search-window .search-wrap input:focus {
+  border-color: #333;
+  outline: 0;
+  border-width: 1px;
+}
+#board-search .search-window .search-wrap .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 108px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.board-table {
+  font-size: 13px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.board-table a {
+  color: #333;
+  display: inline-block;
+  line-height: 1.4;
+  word-break: break-all;
+  vertical-align: middle;
+}
+.board-table a:hover {
+  text-decoration: underline;
+}
+.board-table th {
+  text-align: center;
+}
+
+.board-table .th-num {
+  width: 100px;
+  text-align: center;
+}
+
+.board-table .th-date {
+  width: 200px;
+}
+
+.board-table th, .board-table td {
+  padding: 14px 0;
+}
+
+.board-table tbody td {
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+.board-table tbody th {
+  padding-left: 28px;
+  padding-right: 14px;
+  border-top: 1px solid #e7e7e7;
+  text-align: left;
+}
+
+.board-table tbody th p{
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-dark {
+  background: #555;
+  color: #fff;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #555;
+  color: #fff;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
+}
+
+/* reset */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+
+footer{
+	position: absolute;
+	width: 1910PX;
+	height: 50px;
+	bottom: 0;
+	margin-top: px;
+	text-align: center;
+	color: white;
+	background-color: green;	
+}
+
+#page{width: 1000px; margin: px auto;}
+
+
+
+
